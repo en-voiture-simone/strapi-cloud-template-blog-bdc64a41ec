@@ -62,6 +62,22 @@ export interface SharedSlider extends Schema.Component {
   };
 }
 
+export interface SharedTextTitreImage extends Schema.Component {
+  collectionName: 'components_shared_text_titre_images';
+  info: {
+    displayName: 'text-titre-image';
+    description: '';
+  };
+  attributes: {
+    texte: Attribute.Text;
+    css: Attribute.Relation<
+      'shared.text-titre-image',
+      'oneToOne',
+      'api::css-de-test.css-de-test'
+    >;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -70,6 +86,7 @@ declare module '@strapi/types' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'shared.text-titre-image': SharedTextTitreImage;
     }
   }
 }

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_text_titre_images",
+  "info": {
+    "displayName": "text-titre-image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "texte": {
+      "type": "text"
+    },
+    "css": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::css-de-test.css-de-test"
+    }
+  }
+}

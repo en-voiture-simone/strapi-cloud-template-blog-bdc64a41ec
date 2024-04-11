@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_de_tests",
+  "info": {
+    "singularName": "page-de-test",
+    "pluralName": "page-de-tests",
+    "displayName": "page-de-test"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.text-titre-image"
+      ]
+    }
+  }
+}
